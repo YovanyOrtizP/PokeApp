@@ -13,6 +13,7 @@ import com.yop.pokeyovany.util.SelectedPokemonException
 import com.yop.pokeyovany.util.UIState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

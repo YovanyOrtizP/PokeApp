@@ -43,19 +43,6 @@ class PokemonDetailFragment : Fragment() {
                 is UIState.Error -> {}
             }
         }
-//        viewModel.pokemonDetails.observe(viewLifecycleOwner){
-//            when (it){
-//                is UIState.Loading -> {}
-//                is UIState.Success<PokemonDetailResponse> ->{
-//                    Picasso.get().load(it.response.sprites?.frontDefault).into(binding.ivCharacter)
-//                    binding.tvCharacterName.text = it.response.name
-//                    binding.tvCharacterHeight.text = it.response.height.toString()
-//                    binding.tvCharacterOrder.text = it.response.order.toString()
-//                    binding.tvCharacterWeight.text = it.response.weight.toString()
-//                }
-//                is UIState.Error -> {}
-//            }
-//        }
 
         viewModel.flowPokemonsDetails()
         return binding.root
@@ -63,7 +50,7 @@ class PokemonDetailFragment : Fragment() {
 
     private fun initViews(response: PokemonDetailResponse) {
         response?.let {
-            Picasso.get().load(it.sprites?.frontDefault).into(binding.ivCharacter)
+            Picasso.get().load(it.sprites?.frontDefault).resize(1000,900).into(binding.ivCharacter)
             binding.tvCharacterName.text = it.name
             binding.tvCharacterHeight.text = it.height.toString()
             binding.tvCharacterOrder.text = it.order.toString()

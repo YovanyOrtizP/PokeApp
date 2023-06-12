@@ -22,6 +22,7 @@ class PokemonUseCases @Inject constructor(
                 response.body()?.let {
                     it.results?.let { data->
                         emit(UIState.Success(data))
+                        //counter++
                     }?: throw InformationException("EMPTY LIST")
                 } ?: throw InformationException()
             } else{
