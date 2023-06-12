@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".ui.PokemonDetailFragment">
+
+    <ImageView
+        android:id="@+id/iv_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        tools:src="@drawable/ic_launcher_foreground" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Name:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_characterName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        tools:text="Character Name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Height:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_characterHeight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        tools:text="Character Height" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Order Number:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_characterOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        tools:text="Character Order Number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Weight:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_characterWeight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        tools:text="Character Weight" />
+
+</LinearLayout>
